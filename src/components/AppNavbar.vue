@@ -6,38 +6,41 @@
     <v-app-bar
         color="primary"
         prominent
-        density="compact"
     >
 
-        <v-toolbar-title>
-            JM
-        </v-toolbar-title>
+        <div class="w-100 d-flex justify-center align-center ga-16">
+            
+            <mainLogo size="54" />
 
-        <v-spacer></v-spacer>
-
-        <v-tabs
-            v-if="$vuetify.display.mdAndUp"
-            align-tabs="center"
-            class="d-flex ga-2 me-16"
-        >
-            <v-tab 
-                v-for="nav in ['Experience', 'Hard Skills', 'Soft Skills', 'Languages', 'Contact']" 
+            <div
+                v-if="$vuetify.display.mdAndUp"
+                class="d-flex ga-0"
             >
-                {{ nav }}
-            </v-tab>
-        </v-tabs>
+                <v-tab v-for="nav in ['Experience', 'Hard Skills', 'Soft Skills', 'Languages', 'Contact']" >
+                    {{ nav }}
+                </v-tab>
+            </div>
+
+            <div>
+                <v-btn icon>
+                    <v-icon size="36" icon="mdi-linkedin"  />
+
+                </v-btn>
+                    <!-- class="pe-3" -->
+                <v-btn 
+                    v-if="$vuetify.display.smAndDown"
+                    icon="mdi-dots-vertical" 
+                    variant="text"
+                />
+            </div>
+
+        </div>    
 
 
-        <v-btn 
-            icon="mdi-linkedin" 
-            variant="text"
-            class="pe-3"
-        />
-        <v-btn 
-            v-if="$vuetify.display.smAndDown"
-            icon="mdi-dots-vertical" 
-            variant="text"
-        />
+        
+
+
+        
     </v-app-bar>
 </template>
 

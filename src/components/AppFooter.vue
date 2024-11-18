@@ -2,8 +2,8 @@
   <v-footer class="pt-10 pb-8">
     <div class="d-flex justify-space-between ga-16 mx-auto">
       <div class="d-flex align-center ga-2">
-        <v-avatar size="60" rounded="sm" variant="tonal" color="blue">
-          <div class="font-weight-bold text-h5">
+        <v-avatar size="60" rounded color="white">
+          <div class="text-blue font-weight-bold text-h4">
             JM
           </div>
         </v-avatar>
